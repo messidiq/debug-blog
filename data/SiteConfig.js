@@ -4,12 +4,12 @@ const config = {
   siteTitleAlt: 'Cdsbndt',
   siteLogo: '/logos/newlogo-1024.png',
   siteUrl: 'https://codesbandit.netlify.app',
-  repo: 'https://github.com/messidiq',
+  repo: 'https://github.com/messidiq/test',
   pathPrefix: '',
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'MMMM Do, YYYY',
   siteDescription:
-    'Muhammad Shiddiq is a life-time learner and a business man',
+    'Blog Harian Muhammad Shiddiq F',
   siteRss: '/rss.xml',
   googleAnalyticsID: 'UA-42068444-1',
   postDefaultCategoryID: 'Tech',
@@ -30,10 +30,6 @@ const config = {
     {
       name: 'Newsletter',
       link: '/newsletter/',
-    },
-    {
-      name: '404',
-      link: '/note/',
     },
 
   ],

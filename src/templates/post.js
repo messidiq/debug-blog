@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../layout'
-import UserInfo from '../components/UserInfo'
+import Comments from '../components/Comments'
 import PostTags from '../components/PostTags'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
@@ -31,9 +31,10 @@ export default class PostTemplate extends Component {
 
     const date = formatDate(post.date)
     const githubLink = editOnGithub(post)
-    const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(post.title)}&url=${
-      config.siteUrl
-    }/${post.slug}/&via=taniarascia`
+    const twitterShare = `https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${config.siteUrl}/${post.slug}&display=popup`
+    // const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(post.title)}&url=${
+    //   config.siteUrl
+    // }/${post.slug}/&via=taniarascia`
 
     return (
       <Layout>
@@ -60,14 +61,14 @@ export default class PostTemplate extends Component {
                   Share
                 </a>
                 /
-                <a
+                {/* <a
                   className="github-link"
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Edit ✏️
-                </a>
+                </a> */}
               </div>
               <PostTags tags={post.tags} />
             </div>
@@ -75,7 +76,7 @@ export default class PostTemplate extends Component {
 
           <div className="post" dangerouslySetInnerHTML={{ __html: postNode.html }} />
         </article>
-        <UserInfo config={config} />
+        {/* <Comments config={config} /> */}
       </Layout>
     )
   }

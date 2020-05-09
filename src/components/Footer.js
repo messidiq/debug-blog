@@ -1,51 +1,44 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import netlify from '../../content/images/netlify.png'
+import facebook from '../../content/thumbnails/facebook.png'
 import gatsby from '../../content/thumbnails/gatsby.png'
-import github from '../../content/images/github.png'
+import instagram from '../../content/thumbnails/instagram.png'
 
 export default class Footer extends Component {
   render() {
     return (
       <footer className="footer container">
         <div>
-          <a href="https://ko-fi.com/taniarascia" target="_blank" rel="noopener noreferrer">
-            Ko-Fi
-          </a>
-          <a href="https://patreon.com/taniarascia" target="_blank" rel="noopener noreferrer">
-            Patreon
-          </a>
-          <Link to="/newsletter">Newsletter</Link>
-          <a href="https://www.taniarascia.com/rss.xml" target="_blank" rel="noopener noreferrer">
-            RSS
+          <a href="https://gatsbyjs.org" target="_blank" rel="noopener noreferrer">
+            Build with Gatsby JS - By Tania
           </a>
         </div>
         <div>
-          <a href="https://github.com/taniarascia" title="Open-source on GitHub">
+          <a href="https://instagram.com/codesbandit" title="Instagram">
             <img
-              src={github}
+              src={instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-img"
-              alt="GitHub"
+              alt="Instagram"
             />
           </a>
-          <a href="https://www.netlify.com/" title="Hosted by Netlify">
+          <a href="https://www.facebook.com/codesbandit" title="Facebook">
             <img
-              src={netlify}
+              src={facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-img"
-              alt="Netlify"
+              alt="Facebook"
             />
           </a>
-          <a href="https://www.gatsbyjs.org/" title="Built with Gatsby">
+          <a href="https://gatsbyjs.org" title="By Gatsby JS">
             <img
               src={gatsby}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-img"
-              alt="Gatsby"
+              alt="Gatsby JS"
             />
           </a>
         </div>

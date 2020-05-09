@@ -23,19 +23,15 @@ export default class Index extends Component {
 
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} – Full Stack Software Developer`} />
+        <Helmet title={`${config.siteDescription}`} />
         <SEO />
         <div className="container">
-          <div className="lead">
             <div className="elevator">
               <h1>{`Hai, Saya Muhammad Shiddiq 👋`} </h1>
               <p>
-                {`I'm a full stack software developer creating android`}
-                projects and <Link to="/blog">writing</Link> about modern JavaScript, Node.js, and
-                development.
+                Saya seorang Android Developer, Suka menulis tentang Technology, History, Geo-Economic, Geo-Politic dan beberapa tutorial <Link to="/blog">Android, Cloud Computing dan Pemrograman</Link>. Blog ini saya dedikasikan untuk menulis ilmu & pengalaman baik yang sudah saya pelajari dan ketahui. 
               </p>
             </div>
-          </div>
         </div>
 
         <div className="container front-page">
@@ -73,19 +69,6 @@ export default class Index extends Component {
             <h2>Talks</h2>
             <SimpleListing simple data={speaking} />
           </section>
-        </div>
-        <div className="gradient-section">
-          <div className="container">
-            <h2>Other People Say...</h2>
-          </div>
-          <div className="quotations">
-            {quotes.map(quote => (
-              <blockquote className="quotation" key={quote.name}>
-                <p>{quote.quote}</p>
-                <cite>— {quote.name}</cite>
-              </blockquote>
-            ))}
-          </div>
         </div>
       </Layout>
     )
